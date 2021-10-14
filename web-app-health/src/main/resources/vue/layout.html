@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="/webjars/vue/2.6.10/dist/vue.min.js"></script>
+        @componentRegistration
+    </head>
+    <body>
+        <main id="main-vue" v-cloak>
+            @routeComponent
+        </main>
+        
+        <script>
+            new Vue({el: "#main-vue"});
+            
+        </script>
+        
+    </body>
+    <style>
+		
+		body{
+			background-image: url("http://localhost:7777/icons/background.jpg");
+			font-family: Arial, Helvetica;
+			margin: 0
+		}
+		
+		.header{
+			background-color: #003366;
+			text-align: center;
+		}
+		
+		.header h1{
+			font-size: 50px;
+			color:white;
+			display:inline;
+		}
+		
+		.header h1:hover{
+			color:black
+		}
+		
+		.header h5{
+			font-size: 80%;
+			color:#ffffe6;
+			display:inline;
+		}
+		
+		.header h3{
+			color:white;
+			position:relative;
+			bottom:10px;
+			right:7px;
+		}
+		
+		a:hover, a:visited, a:link, a:active
+		{
+			text-decoration: none;
+		}
+		
+    </style>
+</html>
